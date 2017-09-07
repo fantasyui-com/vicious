@@ -1,9 +1,12 @@
 {
   "name": "vicious",
+  "productName": "Vicious",
+
   "version": "1.0.1",
   "description": "Business server inspired by google result pages with payments via stripe.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
+    "start": "node ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +21,13 @@
   },
   "homepage": "https://github.com/fantasyui-com/vicious#readme",
   "dependencies": {
-    "express": "^4.15.4"
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "express": "^4.15.4",
+    "hbs": "~4.0.1",
+    "morgan": "~1.8.1",
+    "node-sass-middleware": "0.9.8",
+    "serve-favicon": "~2.4.2"
   }
 }
