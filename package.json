@@ -1,0 +1,23 @@
+{
+  "name": "vicious",
+  "version": "1.0.0",
+  "description": "Business server inspired by google result pages with payments via stripe.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fantasyui-com/vicious.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fantasyui-com/vicious/issues"
+  },
+  "homepage": "https://github.com/fantasyui-com/vicious#readme",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}
