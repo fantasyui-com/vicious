@@ -1,6 +1,6 @@
 {
   "name": "vicious",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Business server inspired by google result pages with payments via stripe.",
   "main": "index.js",
   "scripts": {
