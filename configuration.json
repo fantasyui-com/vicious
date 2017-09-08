@@ -2,7 +2,7 @@
   "name": "trending.jewelry",
   "productName": "Trending Jewelry",
 
-  "title": "Today's Trending Jewelry",
+  "title": "Today's Trends in Jewelry",
   "description": "Unbeatable Image, Unstoppable Presence. Display your Power and Leadership, today.",
 
   "spots":[
@@ -18,7 +18,7 @@
     {"title": "Spot #9", "premium":false, "ammount":"200", "label":"Buy Spot $2.00"},
     {"title":"Spot #10", "premium":false, "ammount":"100", "label":"Buy Spot $1.00"},
     {"title":"Spot #11", "premium":false, "ammount":"100", "label":"Buy Spot $1.00"},
-    {"title":"Spot #12", "premium":false, "ammount":"100", "label":"Buy Spot $1.00"} 
+    {"title":"Spot #12", "premium":false, "ammount":"100", "label":"Buy Spot $1.00"}
 
 
   ],
