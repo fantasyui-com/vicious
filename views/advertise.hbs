@@ -1,0 +1,64 @@
+
+
+
+
+    <div class="container-fluid">
+
+      <!-- Example row of columns -->
+      <div class="row">
+
+        {{#each spots}}
+
+         <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
+
+           {{#if premium}}
+             <div class="card text-white bg-primary sh-3 mb-3 align-items-stretch" style="width: 100%;">
+               <div class="card-body">
+                 <h4 class="card-title lead">{{title}}</h4>
+                 <p class="card-text">
+                   <div class="alert alert-primary" role="alert">
+                     This is a premium placement spot!
+                   </div>
+                 </p>
+                 <div class="text-right" style="min-height: 5rem;">
+                 </div>
+                 <div class="text-right">
+                   <a href="/purchase?spot={{index}}" class="btn btn-light">{{label}}</a>
+                 </div>
+               </div>
+             </div>
+           {{else}}
+             <div class="card text-black bg-light sh-3 mb-3 align-items-stretch" style="width: 100%;">
+               <div class="card-body">
+                 <h4 class="card-title lead">{{title}}</h4>
+                 <div class="text-right" style="min-height: 7rem;">
+                 </div>
+                 <div class="text-right">
+                   <a href="/purchase?spot={{index}}" class="btn btn-outline-primary">{{label}}</a>
+                 </div>
+               </div>
+             </div>
+           {{/if}}
+
+
+
+
+         </div>
+
+       {{/each}}
+
+
+      </div>
+
+    </div> <!-- /container -->
+
+
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron rounded-0 mt-3 mb-0 sh-i">
+          <div class="container mb-0">
+            <div class="small"><a href="/" class="btn btn-text">Home</a></div>
+            <div class="small"><a href="/about" class="btn btn-text">About</a></div>
+            <div class="small"><a href="/about#privacy" class="btn btn-text">Privacy</a></div>
+            <div class="small float-right">&copy; {{productName}} 2017</div>
+          </div>
+        </div>

@@ -2,22 +2,44 @@
   "name": "trending.jewelry",
   "productName": "Trending Jewelry",
 
-  "mainTitle": "Today's Trends",
-  "mainText": "Unbeatable Image, Unstoppable Presence. Display your Power and Leadership, today.",
+  "title": "Today's Trending Jewelry",
+  "description": "Unbeatable Image, Unstoppable Presence. Display your Power and Leadership, today.",
+
+  "spots":[
+
+    {"title": "Spot #1", "premium": true, "ammount":"400", "label":"Buy Spot $4.00"},
+    {"title": "Spot #2", "premium": true, "ammount":"400", "label":"Buy Spot $4.00"},
+    {"title": "Spot #3", "premium": true, "ammount":"400", "label":"Buy Spot $4.00"},
+    {"title": "Spot #4", "premium": true, "ammount":"300", "label":"Buy Spot $3.00"},
+    {"title": "Spot #5", "premium":false, "ammount":"300", "label":"Buy Spot $3.00"},
+    {"title": "Spot #6", "premium":false, "ammount":"300", "label":"Buy Spot $3.00"},
+    {"title": "Spot #7", "premium":false, "ammount":"200", "label":"Buy Spot $2.00"},
+    {"title": "Spot #8", "premium":false, "ammount":"200", "label":"Buy Spot $2.00"},
+    {"title": "Spot #9", "premium":false, "ammount":"200", "label":"Buy Spot $2.00"},
+    {"title":"Spot #10", "premium":false, "ammount":"100", "label":"Buy Spot $1.00"},
+    {"title":"Spot #11", "premium":false, "ammount":"100", "label":"Buy Spot $1.00"},
+    {"title":"Spot #12", "premium":false, "ammount":"100", "label":"Buy Spot $1.00"} 
+
+
+  ],
 
   "items":[
 
-    {"title":"Umbrella Girls", "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", "ur":""},
-    {"title":"Twiggy Earrings", "text":" Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "ur":""},
-    {"title":"Eardrops IV", "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", "ur":""},
+    {"title":"Umbrella Girls", "image":"/jewellery/01.jpg", "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "ur":""},
+    {"title":"Twiggy Earrings", "image":"/jewellery/02.jpg", "text":" Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "ur":""},
+    {"title":"Eardrops IV", "image":"/jewellery/03.jpg", "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "ur":""},
 
-    {"title":"TARDIS Box", "text":"Lorem Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "ur":""},
-    {"title":"Mosquito Earrings", "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", "ur":""},
-    {"title":"Colorful Butterfly", "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "ur":""},
+    {"title":"TARDIS Box", "image":"/jewellery/04.jpg", "text":"Lorem Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "ur":""},
+    {"title":"Mosquito Earrings", "image":"/jewellery/05.jpg", "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "ur":""},
+    {"title":"Colorful Butterfly", "image":"/jewellery/06.jpg", "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "ur":""},
 
-    {"title":"Octopus Earrings", "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", "ur":""},
-    {"title":"Nautilus Shell ", "text":" Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "ur":""},
-    {"title":"Triangle Gears", "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", "ur":""}
+    {"title":"Octopus Earrings", "image":"/jewellery/07.jpg", "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "ur":""},
+    {"title":"Nautilus Shell ", "image":"/jewellery/08.jpg", "text":" Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "ur":""},
+    {"title":"Triangle Gears", "image":"/jewellery/09.jpg", "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "ur":""},
+
+    {"title":"Octopus Earrings", "image":"/jewellery/10.jpg", "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "ur":""},
+    {"title":"Nautilus Shell ", "image":"/jewellery/11.jpg", "text":" Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.", "ur":""},
+    {"title":"Triangle Gears", "image":"/jewellery/12.jpg", "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "ur":""}
 
 
   ]

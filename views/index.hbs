@@ -1,69 +1,25 @@
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-
-      <a class="navbar-brand" href="#">{{productName}}</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1 class="display-3">{{mainTitle}}</h1>
-        <p>{{mainText}}</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Buy Spot &raquo;</a></p>
-      </div>
-    </div>
 
 
 
-    <div class="container">
+    <div class="container-fluid">
 
       <!-- Example row of columns -->
       <div class="row">
 
-
         {{#each items}}
 
-         <div class="col-md-4">
-
-           <div class="card mb-3">
-             <img class="card-img-top" src="https://unsplash.it/200/150/?random&title={{title}}" alt="Image">
+         <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
+           <div class="card sh-3 mb-3 align-items-stretch">
+             <img class="card-img-top" src="{{image}}" alt="Image">
              <div class="card-body">
-               <h4 class="card-title">{{title}}</h4>
-               <p class="card-text">{{text}}</p>
-               <a href="{{url}}" class="btn btn-primary">Buy</a>
+               <h4 class="card-title lead">{{title}}</h4>
+               <p class="card-text small">{{text}}</p>
+               <div class="text-right">
+                 <a href="{{url}}" class="btn btn-primary">Visit &raquo;</a>
+               </div>
              </div>
            </div>
-
-
          </div>
 
        {{/each}}
@@ -74,9 +30,16 @@
     </div> <!-- /container -->
 
 
-    <div class="container">
-      <hr>
-      <footer>
-        <p>&copy; {{productName}} 2017</p>
-      </footer>
-    </div> <!-- /container -->
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron rounded-0 mt-3 mb-0 sh-i">
+          <div class="container mb-0">
+            <h1 class="display-4">{{title}}</h1>
+            <p class="lead">{{description}}</p>
+            <p class=""><a class="btn btn-primary btn-lg" href="/advertise" role="button">Advertise &raquo;</a></p>
+            <hr>
+            <div class="small"><a href="/" class="btn btn-text">Home</a></div>
+            <div class="small"><a href="/about" class="btn btn-text">About</a></div>
+            <div class="small"><a href="/about#privacy" class="btn btn-text">Privacy</a></div>
+            <div class="small float-right">&copy; {{productName}} 2017</div>
+          </div>
+        </div>

@@ -1,5 +1,37 @@
+$white:  rgb(188, 188, 188);
+$gray-100: rgb(185, 185, 186);
+$gray-200: rgb(177, 179, 180);
+$gray-300: rgb(172, 174, 176);
+$gray-400: rgb(164, 167, 170);
+$gray-500: rgb(147, 151, 155);
+$gray-600: rgb(128, 132, 136);
+$gray-700: rgb(97, 101, 104);
+$gray-800: rgb(87, 90, 93);
+$gray-900: rgb(77, 79, 81);
+$black:  rgb(61, 61, 61);
 
-/* Move down content because we have a fixed navbar that is 3.5rem tall */
-body {
-  padding-top: 3.5rem;
+$blue:    rgb(61, 122, 188);
+$indigo:  rgb(112, 69, 182);
+$purple:  rgb(116, 94, 157);
+$pink:    rgb(177, 92, 131);
+$red:     rgb(171, 87, 95);
+$orange:  rgb(187, 124, 71);
+$yellow:  rgb(188, 157, 64);
+$green:   rgb(81, 144, 95);
+$teal:    rgb(77, 161, 136);
+$cyan:    rgb(72, 142, 153);
+
+
+.sh-i {
+  box-shadow: inset 0px 9px 8px 0px transparentize($gray-900,0.5);
+}
+
+.sh-1 {
+  box-shadow: 3px 3px 8px -1px transparentize($gray-900,0.5);
+}
+.sh-2 {
+  box-shadow: 6px 6px 8px -1px transparentize($gray-900,0.5);
+}
+.sh-3 {
+  box-shadow: 9px 9px 8px -1px transparentize($gray-900,0.5);
 }
