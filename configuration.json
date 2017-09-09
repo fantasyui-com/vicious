@@ -14,18 +14,18 @@
 
   "spots":[
 
-    {"title": "Spot #1", "premium": true, "amount":3000, "label":"Change"},
-    {"title": "Spot #2", "premium": true, "amount":3000, "label":"Change"},
-    {"title": "Spot #3", "premium": true, "amount":3000, "label":"Change"},
-    {"title": "Spot #4", "premium": true, "amount":3000, "label":"Change"},
-    {"title": "Spot #5", "premium":false, "amount":2000, "label":"Change"},
-    {"title": "Spot #6", "premium":false, "amount":2000, "label":"Change"},
-    {"title": "Spot #7", "premium":false, "amount":2000, "label":"Change"},
-    {"title": "Spot #8", "premium":false, "amount":2000, "label":"Change"},
-    {"title": "Spot #9", "premium":false, "amount":1000, "label":"Change"},
-    {"title":"Spot #10", "premium":false, "amount":1000, "label":"Change"},
-    {"title":"Spot #11", "premium":false, "amount":1000, "label":"Change"},
-    {"title":"Spot #12", "premium":false, "amount":1000, "label":"Change"} 
+    {"name": "Spot #1", "premium": true, "amount":3000, "label":"Change"},
+    {"name": "Spot #2", "premium": true, "amount":3000, "label":"Change"},
+    {"name": "Spot #3", "premium": true, "amount":3000, "label":"Change"},
+    {"name": "Spot #4", "premium": true, "amount":3000, "label":"Change"},
+    {"name": "Spot #5", "premium":false, "amount":2000, "label":"Change"},
+    {"name": "Spot #6", "premium":false, "amount":2000, "label":"Change"},
+    {"name": "Spot #7", "premium":false, "amount":2000, "label":"Change"},
+    {"name": "Spot #8", "premium":false, "amount":2000, "label":"Change"},
+    {"name": "Spot #9", "premium":false, "amount":1000, "label":"Change"},
+    {"name":"Spot #10", "premium":false, "amount":1000, "label":"Change"},
+    {"name":"Spot #11", "premium":false, "amount":1000, "label":"Change"},
+    {"name":"Spot #12", "premium":false, "amount":1000, "label":"Change"}
 
   ],
 
