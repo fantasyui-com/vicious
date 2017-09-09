@@ -8,9 +8,15 @@ var sassMiddleware = require('node-sass-middleware');
 
 var index = require('./routes/index');
 var advertise = require('./routes/advertise');
+var purchase = require('./routes/purchase');
 var users = require('./routes/users');
 
 var app = express();
+
+
+const package = require( path.resolve( __dirname, 'package.json' ) );
+const configuration = require( path.resolve( __dirname, 'configuration.json' ) );
+const setup = Object.assign({}, package , configuration, )
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -33,6 +39,10 @@ hbs.registerHelper('if', function(conditional, options) {
   }
 });
 
+hbs.registerHelper('price', function(amount) {
+  return setup.currencySymbol + (parseInt(amount)/100).toFixed(2).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + " " + setup.currency;
+});
+
 app.set('view engine', 'hbs');
 
 // uncomment after placing your favicon in /public
@@ -51,6 +61,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/advertise', advertise);
+app.use('/purchase', purchase);
 app.use('/users', users);
 
 // catch 404 and forward to error handler

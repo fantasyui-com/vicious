@@ -3774,6 +3774,18 @@ a.bg-dark:focus, a.bg-dark:hover {
 .border-left-0 {
   border-left: 0 !important; }
 
+.border-top-1 {
+  border-top: 1px solid #b1b3b4 !important; }
+
+.border-right-1 {
+  border-right: 1px solid #b1b3b4 !important; }
+
+.border-bottom-1 {
+  border-bottom: 1px solid #b1b3b4 !important; }
+
+.border-left-1 {
+  border-left: 1px solid #b1b3b4 !important; }
+
 .border-primary {
   border-color: #3d7abc !important; }
 

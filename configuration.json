@@ -1,25 +1,31 @@
 {
   "name": "trending.jewelry",
-  "productName": "Trending Jewelry",
+  "address": "http://localhost:3000/",
 
+  "productName": "Trending Jewelry",
   "title": "Today's Trends in Jewelry",
   "description": "Unbeatable Image, Unstoppable Presence. Display your Power and Leadership, today.",
 
+  "stripePublicKey":"pk_test_6pRNASCoBOKtIshFeQd4XMUh",
+  "stripeSecretKey":"sk_test_BQokikJOvBiI2HlWgH4olfQ2",
+
+  "currency":"USD",
+  "currencySymbol":"$",
+
   "spots":[
 
-    {"title": "Spot #1", "premium": true, "ammount":"400", "label":"Buy Spot $4.00"},
-    {"title": "Spot #2", "premium": true, "ammount":"400", "label":"Buy Spot $4.00"},
-    {"title": "Spot #3", "premium": true, "ammount":"400", "label":"Buy Spot $4.00"},
-    {"title": "Spot #4", "premium": true, "ammount":"300", "label":"Buy Spot $3.00"},
-    {"title": "Spot #5", "premium":false, "ammount":"300", "label":"Buy Spot $3.00"},
-    {"title": "Spot #6", "premium":false, "ammount":"300", "label":"Buy Spot $3.00"},
-    {"title": "Spot #7", "premium":false, "ammount":"200", "label":"Buy Spot $2.00"},
-    {"title": "Spot #8", "premium":false, "ammount":"200", "label":"Buy Spot $2.00"},
-    {"title": "Spot #9", "premium":false, "ammount":"200", "label":"Buy Spot $2.00"},
-    {"title":"Spot #10", "premium":false, "ammount":"100", "label":"Buy Spot $1.00"},
-    {"title":"Spot #11", "premium":false, "ammount":"100", "label":"Buy Spot $1.00"},
-    {"title":"Spot #12", "premium":false, "ammount":"100", "label":"Buy Spot $1.00"}
-
+    {"title": "Spot #1", "premium": true, "amount":3000, "label":"Change"},
+    {"title": "Spot #2", "premium": true, "amount":3000, "label":"Change"},
+    {"title": "Spot #3", "premium": true, "amount":3000, "label":"Change"},
+    {"title": "Spot #4", "premium": true, "amount":3000, "label":"Change"},
+    {"title": "Spot #5", "premium":false, "amount":2000, "label":"Change"},
+    {"title": "Spot #6", "premium":false, "amount":2000, "label":"Change"},
+    {"title": "Spot #7", "premium":false, "amount":2000, "label":"Change"},
+    {"title": "Spot #8", "premium":false, "amount":2000, "label":"Change"},
+    {"title": "Spot #9", "premium":false, "amount":1000, "label":"Change"},
+    {"title":"Spot #10", "premium":false, "amount":1000, "label":"Change"},
+    {"title":"Spot #11", "premium":false, "amount":1000, "label":"Change"},
+    {"title":"Spot #12", "premium":false, "amount":1000, "label":"Change"} 
 
   ],
 

@@ -4,9 +4,7 @@ const configuration = require( path.resolve( __dirname, '..', 'configuration.jso
 const express = require('express');
 const router = express.Router();
 
-/* GET advertise page. */
 router.get('/', function(req, res, next) {
   res.render('advertise', Object.assign({}, package , configuration, ));
 });
-
 module.exports = router;

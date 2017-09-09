@@ -1,45 +1,24 @@
+<div class="container-fluid">
+  <!-- Example row of columns -->
+  <div class="row">
+    {{#each items}}
+     <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
 
+       <div class="card sh-3 mb-3 align-items-stretch">
+         <div class="card-body">
 
+           <div class="text-right"> <a href="{{url}}" class="btn btn-text">{{title}} &raquo;</a> </div>
+           <hr>
 
+           <h4 class="card-title lead"></h4>
+           <p class="card-text small">{{text}}</p>
 
-    <div class="container-fluid">
-
-      <!-- Example row of columns -->
-      <div class="row">
-
-        {{#each items}}
-
-         <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
-           <div class="card sh-3 mb-3 align-items-stretch">
-             <img class="card-img-top" src="{{image}}" alt="Image">
-             <div class="card-body">
-               <h4 class="card-title lead">{{title}}</h4>
-               <p class="card-text small">{{text}}</p>
-               <div class="text-right">
-                 <a href="{{url}}" class="btn btn-primary">Visit &raquo;</a>
-               </div>
-             </div>
-           </div>
          </div>
 
-       {{/each}}
+         <img class="card-img-bottom border border-0 border-dark border-top-1" src="{{image}}" alt="Image">
+       </div>
 
-
-      </div>
-
-    </div> <!-- /container -->
-
-
-        <!-- Main jumbotron for a primary marketing message or call to action -->
-        <div class="jumbotron rounded-0 mt-3 mb-0 sh-i">
-          <div class="container mb-0">
-            <h1 class="display-4">{{title}}</h1>
-            <p class="lead">{{description}}</p>
-            <p class=""><a class="btn btn-primary btn-lg" href="/advertise" role="button">Advertise &raquo;</a></p>
-            <hr>
-            <div class="small"><a href="/" class="btn btn-text">Home</a></div>
-            <div class="small"><a href="/about" class="btn btn-text">About</a></div>
-            <div class="small"><a href="/about#privacy" class="btn btn-text">Privacy</a></div>
-            <div class="small float-right">&copy; {{productName}} 2017</div>
-          </div>
-        </div>
+     </div>
+   {{/each}}
+  </div>
+</div> <!-- /container -->

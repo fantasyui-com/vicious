@@ -1,64 +1,55 @@
+<div class="container-fluid">
+  <!-- Example row of columns -->
+  <div class="row">
+    <div class="col">
+
+    </div>
+  </div>
+
+  <div class="row">
+    {{#each spots}}
+     <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
 
 
+         <div id="spot-card-{{index}}" class="card text-white bg-primary sh-3 mb-3 align-items-stretch" style="width: 100%;">
 
 
-    <div class="container-fluid">
+            <div class="card-body">
+             <h4 class="card-title lead">{{title}} &middot; {{price amount}}</h4>
+             <hr>
 
-      <!-- Example row of columns -->
-      <div class="row">
+             <div class="" style="min-height: 5rem;">
 
-        {{#each spots}}
-
-         <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
-
-           {{#if premium}}
-             <div class="card text-white bg-primary sh-3 mb-3 align-items-stretch" style="width: 100%;">
-               <div class="card-body">
-                 <h4 class="card-title lead">{{title}}</h4>
-                 <p class="card-text">
-                   <div class="alert alert-primary" role="alert">
-                     This is a premium placement spot!
-                   </div>
-                 </p>
-                 <div class="text-right" style="min-height: 5rem;">
+               <form id="spot-form-{{index}}">
+                 <div class="form-group">
+                   <label class="small text-light" for="spot-form-{{index}}-image">Image URL</label>
+                   <input type="text" class="form-control" id="spot-form-{{index}}-image" placeholder="">
                  </div>
-                 <div class="text-right">
-                   <a href="/purchase?spot={{index}}" class="btn btn-light">{{label}}</a>
+                 <div class="form-group">
+                   <label class="small text-light" for="spot-form-{{index}}-text">Text</label>
+                   <textarea class="form-control" id="spot-form-{{index}}-text" rows="3"></textarea>
                  </div>
-               </div>
+                 <div class="form-group">
+                   <label class="small text-light" for="spot-form-{{index}}-link">Link URL</label>
+                   <input type="text" class="form-control" id="spot-form-{{index}}-link" placeholder="">
+                 </div>
+               </form>
+
+
              </div>
-           {{else}}
-             <div class="card text-black bg-light sh-3 mb-3 align-items-stretch" style="width: 100%;">
-               <div class="card-body">
-                 <h4 class="card-title lead">{{title}}</h4>
-                 <div class="text-right" style="min-height: 7rem;">
-                 </div>
-                 <div class="text-right">
-                   <a href="/purchase?spot={{index}}" class="btn btn-outline-primary">{{label}}</a>
-                 </div>
-               </div>
+
+
+             <div class="text-right">
+               <button data-card="spot-card-{{index}}" data-form="spot-form-{{index}}" data-amount="{{amount}}" data-name="{{../productName}}" data-title="{{title}}" data-description="{{title}} Purchase" class="btn btn-stripe btn-light">{{label}}</button>
              </div>
-           {{/if}}
 
 
+            </div>
 
-
-         </div>
-
-       {{/each}}
-
-
-      </div>
-
-    </div> <!-- /container -->
-
-
-        <!-- Main jumbotron for a primary marketing message or call to action -->
-        <div class="jumbotron rounded-0 mt-3 mb-0 sh-i">
-          <div class="container mb-0">
-            <div class="small"><a href="/" class="btn btn-text">Home</a></div>
-            <div class="small"><a href="/about" class="btn btn-text">About</a></div>
-            <div class="small"><a href="/about#privacy" class="btn btn-text">Privacy</a></div>
-            <div class="small float-right">&copy; {{productName}} 2017</div>
-          </div>
         </div>
+
+
+     </div>
+   {{/each}}
+  </div>
+</div> <!-- /container -->
