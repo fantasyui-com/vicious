@@ -7,7 +7,7 @@
   </div>
 
   <div class="row">
-    {{#each spots}}
+    {{#each sale}}
      <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
 
 
@@ -23,15 +23,15 @@
                <form id="spot-form-{{index}}">
                  <div class="form-group">
                    <label class="small text-light" for="spot-form-{{index}}-image">Image URL</label>
-                   <input type="text" class="form-control" id="spot-form-{{index}}-image" placeholder="">
+                   <input type="text" class="form-control" id="spot-form-{{index}}-image" value="{{image}}" placeholder="">
                  </div>
                  <div class="form-group">
                    <label class="small text-light" for="spot-form-{{index}}-text">Text</label>
-                   <textarea class="form-control" id="spot-form-{{index}}-text" rows="3"></textarea>
+                   <textarea class="form-control" id="spot-form-{{index}}-text" rows="3">{{text}}</textarea>
                  </div>
                  <div class="form-group">
                    <label class="small text-light" for="spot-form-{{index}}-link">Link URL</label>
-                   <input type="text" class="form-control" id="spot-form-{{index}}-link" placeholder="">
+                   <input type="text" class="form-control" id="spot-form-{{index}}-link" value="{{title}}" placeholder="">
                  </div>
                </form>
 

@@ -10,6 +10,7 @@ $('.btn-stripe').click(function() {
   var formId = $(this).data('form');
 
   var productData = {};
+
   productData.image = $("#"+formId + "-image" ).val();
   productData.text = $("#"+formId + "-text" ).val();
   productData.title = $(this).data('title');
@@ -21,6 +22,7 @@ $('.btn-stripe').click(function() {
 
   // Open Checkout with further options:
   var stripeCheckout = StripeCheckout.configure({
+
     key: $("meta[name='stripe-public-key']").prop('content'),
     image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
     locale: 'auto',
@@ -36,17 +38,23 @@ $('.btn-stripe').click(function() {
           success: function(data) {
             // ... //
             console.log(data);
+
             if(data.error){
+
               alert(error.mesage);
+
             }else{
+
               window.location.replace($("meta[name='website-address']").prop('content'))
               $("#"+cardId).removeClass('bg-primary');
               $("#"+cardId).addClass('bg-warning');
+
             }
           },
           contentType: "application/json",
           dataType: 'json'
       });
+
     }
 
   });

@@ -6,7 +6,15 @@ const router = express.Router();
 
 router.get('/', function(req, res, next) {
 
-  res.render('advertise', Object.assign({}, package , configuration, ));
+  const sale = [];
+
+  configuration.spots.forEach((spot, index)=>{
+    sale.push( Object.assign({}, spot, configuration.items[index]) )
+  })
+
+  // TODO: change spot information HERE.
+
+  res.render('advertise', Object.assign({sale}, package , configuration, ));
 
 });
 module.exports = router;
