@@ -5,7 +5,7 @@ const stripe = require("stripe")(configuration.stripeSecretKey);
 const express = require('express');
 const router = express.Router();
 
-const und = require('../../und/smart')({});
+const und = require('und/smart')({});
 
 /* GET purchase page. */
 router.post('/', function(req, res, next) {

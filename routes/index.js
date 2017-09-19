@@ -4,7 +4,7 @@ const configuration = require( path.resolve( __dirname, '..', 'configuration.jso
 const express = require('express');
 const router = express.Router();
 
-const und = require('../../und/smart')({});
+const und = require('und/smart')({});
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
