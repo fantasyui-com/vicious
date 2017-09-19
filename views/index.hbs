@@ -1,24 +1,25 @@
 <div class="container-fluid">
   <!-- Example row of columns -->
   <div class="row">
-    {{#each items}}
+    {{#each sale}}
+
      <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
 
-       <div class="card sh-3 mb-3 align-items-stretch">
-         <div class="card-body">
+       <div class="card sh-3 mb-3 align-items-stretch" style="width: 100%;">
 
-           <div class="text-right"> <a href="{{url}}" class="btn btn-text">{{title}} &raquo;</a> </div>
+         <div class="card-body mb-0 clearfix">
+           <div class="float-left"> <a href="/advertise" class="btn btn-text text-secondary"><i class="fa fa-pencil"></i></a> </div>
+           <div class="float-right"> <a href="{{url}}" class="btn btn-text">{{title}} &raquo;</a> </div>
+         </div>
+         <div class="card-body mt-0">
            <hr>
-
            <h4 class="card-title lead"></h4>
            <p class="card-text small">{{text}}</p>
-
          </div>
-
-         <img class="card-img-bottom border border-0 border-dark border-top-1" src="{{image}}" alt="Image">
+         <a href="{{url}}"><img class="card-img-bottom border border-0 border-dark border-top-1" src="{{image}}" alt="Image"></a>
        </div>
-
      </div>
+
    {{/each}}
   </div>
 </div> <!-- /container -->

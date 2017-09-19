@@ -11,6 +11,7 @@ Vicious contains an embedded copy of bootstrap SCSS files for ease of styling.
 ---
 
 ![](screenshot-1.jpg)
+![](screenshot-2.jpg)
 
 
 ## Development Notes

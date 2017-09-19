@@ -4,6 +4,8 @@ const configuration = require( path.resolve( __dirname, '..', 'configuration.jso
 const express = require('express');
 const router = express.Router();
 
+const und = require('../../und/smart')({});
+
 router.get('/', function(req, res, next) {
 
   const sale = [];
@@ -12,9 +14,13 @@ router.get('/', function(req, res, next) {
     sale.push( Object.assign({}, spot, configuration.items[index]) )
   })
 
-  // TODO: change spot information HERE.
+  sale.forEach( async (spot, index) => {
+    const saved = await und.get( 'spot-' + index );
+    Object.assign( spot, saved );
+  })
 
   res.render('advertise', Object.assign({sale}, package , configuration, ));
 
 });
+
 module.exports = router;

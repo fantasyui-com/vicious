@@ -2,8 +2,7 @@
 $('.btn-stripe').click(function() {
 
   $(this).attr('disabled', true);
-
-  setTimeout(function(){ $(this).attr('disabled', false); }.bind(this),3000)
+  setTimeout(function(){ $(this).attr('disabled', false); }.bind(this), 3000)
 
   // Product Data based on button data
   var cardId = $(this).data('card');
@@ -11,12 +10,14 @@ $('.btn-stripe').click(function() {
 
   var productData = {};
 
+  // Editable by user
+  productData.title = $("#"+formId + "-title" ).val();
   productData.image = $("#"+formId + "-image" ).val();
   productData.text = $("#"+formId + "-text" ).val();
-  productData.title = $(this).data('title');
-  productData.amount = $(this).data('amount');
+  productData.url = $("#"+formId + "-url" ).val();
+
+  // hardcoded, name is used for looking up product on server
   productData.name = $(this).data('name');
-  productData.description = $(this).data('description');
 
   console.log(productData)
 
@@ -45,9 +46,9 @@ $('.btn-stripe').click(function() {
 
             }else{
 
-              window.location.replace($("meta[name='website-address']").prop('content'))
+              //window.location.replace($("meta[name='website-address']").prop('content'))
               $("#"+cardId).removeClass('bg-primary');
-              $("#"+cardId).addClass('bg-warning');
+              $("#"+cardId).addClass('bg-success');
 
             }
           },
@@ -66,9 +67,9 @@ $('.btn-stripe').click(function() {
 
   // trigger stripe
   stripeCheckout.open({
-    amount: productData.amount,
-    name: productData.name,
-    description: productData.description,
+    amount: $(this).data('amount'),
+    name: $("meta[name='product-name']").prop('content'),
+    description: $(this).data('description'),
     zipCode: true,
   });
 
