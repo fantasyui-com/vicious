@@ -29,6 +29,6 @@
     "node-sass-middleware": "0.9.8",
     "serve-favicon": "~2.4.2",
     "stripe": "^4.25.0",
-    "und": "^1.0.3"
+    "und": "^1.0.6"
   }
 }

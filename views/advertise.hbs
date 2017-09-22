@@ -9,7 +9,7 @@
      <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
          <div id="spot-card-{{index}}" class="card text-white bg-primary sh-3 mb-3 align-items-stretch" style="width: 100%;">
             <div class="card-body">
-             <h4 class="card-title lead">{{name}} &middot; {{price amount}}</h4>
+             <h4 class="card-title lead text-center">{{name}} &middot; {{full-price amount}}</h4>
              <hr>
              <div class="" style="min-height: 5rem;">
                <form id="spot-form-{{index}}">
@@ -42,7 +42,7 @@
                  data-title="{{title}}"
                  data-name="{{name}}"
                  data-description="{{name}} Purchase"
-                 class="btn btn-stripe btn-light">{{label}}</button>
+                 class="btn btn-stripe btn-light">{{price amount}} {{label}}</button>
                </div>
 
              {{else}}
@@ -55,7 +55,7 @@
                  data-title="{{title}}"
                  data-name="{{name}}"
                  data-description="{{name}} Free"
-                 class="btn btn-free btn-dark">{{label}}</button>
+                 class="btn btn-free btn-dark">{{price amount}} {{label}}</button>
                </div>
 
              {{/if}}

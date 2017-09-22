@@ -39,8 +39,12 @@ hbs.registerHelper('if', function(conditional, options) {
   }
 });
 
-hbs.registerHelper('price', function(amount) {
+hbs.registerHelper('full-price', function(amount) {
   return setup.currencySymbol + (parseInt(amount)/100).toFixed(2).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + " " + setup.currency;
+});
+
+hbs.registerHelper('price', function(amount) {
+  return setup.currencySymbol + (parseInt(amount)/100).toFixed(0).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
 });
 
 app.set('view engine', 'hbs');
