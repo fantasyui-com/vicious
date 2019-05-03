@@ -17,3 +17,4 @@ Vicious contains an embedded copy of bootstrap SCSS files for ease of styling.
 ## Development Notes
 
 See [public/stylesheets/custom.scss](public/stylesheets/custom.scss) for variables used in [public/stylesheets/bootstrap](public/stylesheets/bootstrap)
+npm install node-sass-middleware
