@@ -1,7 +1,7 @@
 {
   "name": "vicious",
   "productName": "Vicious",
-  "version": "1.10.0",
+  "version": "1.11.0",
   "description": "Business server inspired by google result pages with payments via stripe.",
   "main": "app.js",
   "scripts": {
